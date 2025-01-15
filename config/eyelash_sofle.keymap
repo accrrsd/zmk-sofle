@@ -59,17 +59,17 @@
 &mkp RCLK       &kp LEFT_WIN  &none   &kp LEFT_ALT  &mo 2   &kp SPACE    &mkp LCLK        &kp ENTER  &mo 1   &kp ESC    &none    &kp DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
             display-name = "LAYER0";
         };
 
         Numeric {
             bindings = <
-&none  &none         &kp PERCENT      &kp EQUAL   &kp PLUS              &kp MINUS                &trans  &none     &none     &none      &none   &none   &none
-&none  &none         &kp KP_MULTIPLY  &kp CARET   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &none     &kp UP    &none      &none   &none   &none
-&none  &kp KP_SLASH  &kp KP_DIVIDE    &kp DOLLAR  &kp LBKT              &kp RBKT                 &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &none   &none   &none
-&none  &none         &none            &none       &kp LBRC              &kp RBRC                 &trans  &none     &none     &none      &none   &none   &none
-&none  &trans        &trans           &trans      &none                 &trans                   &trans  &trans    &none     &trans     &trans  &trans
+&none  &none   &kp PERCENT      &kp KP_SLASH  &none     &none       &trans  &none     &none     &none      &none   &kp MINUS  &kp EQUAL
+&none  &none   &kp KP_MULTIPLY  &kp CARET     &kp LBKT  &kp RBKT    &trans  &none     &kp UP    &none      &none   &none      &none
+&none  &none   &none            &kp DOLLAR    &kp LBRC  &kp RBRC    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &none   &none      &none
+&none  &none   &none            &none         &none     &none       &trans  &none     &none     &none      &none   &none      &none
+&none  &trans  &trans           &trans        &none     &trans      &trans  &trans    &none     &trans     &trans  &trans
             >;
         };
 
