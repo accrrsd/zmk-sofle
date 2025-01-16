@@ -68,6 +68,21 @@
         };
     };
 
+    macros {
+        column: column {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_N5 &kp KP_NUMBER_8>,
+                <&macro_release>;
+
+            label = "COLUMN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -86,7 +101,7 @@
 
         Numeric {
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT_SIGN      &kp HASH      &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp COLON  &kp MINUS   &kp EQUAL
+&kp TILDE  &kp EXCL  &kp AT_SIGN      &kp HASH      &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &column    &kp MINUS   &kp EQUAL
 &kp TAB    &none     &kp KP_MULTIPLY  &kp KP_SLASH  &kp LBKT    &kp RBKT       &trans  &none      &none     &kp UP           &none      &none       &kp SINGLE_QUOTE
 &trans     &none     &none            &none         &kp LBRC    &kp RBRC       &trans  &none      &kp LEFT  &kp DOWN         &kp RIGHT  &trans      &kp DOUBLE_QUOTES
 &trans     &none     &none            &none         &none       &none          &trans  &none      &none     &none            &none      &kp KP_DOT  &kp QUESTION
