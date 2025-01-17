@@ -77,7 +77,8 @@
                 <&kp LA(LEFT_ALT)>,
                 <&macro_tap>,
                 <&kp KP_N5 &kp KP_NUMBER_8>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
 
             label = "COLUMN";
         };
