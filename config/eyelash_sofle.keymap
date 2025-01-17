@@ -101,24 +101,30 @@
         mods = <(MOD_LSFT)>;
     };
 
+    slash_question: slash_question {
+        compatible = "zmk,behavior-mod-morph";
+        label = "SLASH_QUESTION";
+        bindings = <&forward_slash>, <&question_mark>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    backslash_vertical: backslash_vertical {
+        compatible = "zmk,behavior-mod-morph";
+        label = "BACKSLASH_VERTICAL";
+        bindings = <&backslash>, <&vertical_bar>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
-        comma_all_lang {
-            bindings = <&kp KP_COMMA>;
-            key-positions = <50 26>;
-            layers = <1>;
-        };
-
         to_functional_layer {
-            bindings = <&mo 3>;
+            bindings = <&mo 2>;
             key-positions = <60 56>;
-        };
-
-        zero_to_bracket {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <11 26>;
-            layers = <1>;
         };
     };
 
@@ -290,6 +296,146 @@
 
             label = "RIGHT_SQUARE_BRACKET";
         };
+
+        at_symbol: at_symbol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_6 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "AT_SYMBOL";
+        };
+
+        hash_sign: hash_sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_3 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "HASH_SIGN";
+        };
+
+        dollar_sign: dollar_sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_3 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "DOLLAR_SIGN";
+        };
+
+        percent_sign: percent_sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_3 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "PERCENT_SIGN";
+        };
+
+        caret_sign: caret_sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "CARET_SIGN";
+        };
+
+        ampersand: ampersand {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_3 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "AMPERSAND";
+        };
+
+        question_mark: question_mark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_6 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "QUESTION_MARK";
+        };
+
+        forward_slash: forward_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_4 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "FORWARD_SLASH";
+        };
+
+        vertical_bar: vertical_bar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "VERTICAL_BAR";
+        };
+
+        backslash: backslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "BACKSLASH";
+        };
     };
 
     keymap {
@@ -310,41 +456,31 @@
 
         Numeric {
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT_SIGN      &kp HASH      &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &colon     &kp MINUS   &kp EQUAL
-&kp TAB    &none     &kp KP_MULTIPLY  &kp KP_SLASH  &kp LBKT    &kp RBKT       &trans  &none      &none     &kp UP           &none      &none       &kp SINGLE_QUOTE
-&trans     &none     &none            &none         &kp LBRC    &kp RBRC       &trans  &none      &kp LEFT  &kp DOWN         &kp RIGHT  &trans      &kp DOUBLE_QUOTES
-&trans     &none     &none            &none         &none       &none          &trans  &none      &none     &none            &none      &kp KP_DOT  &kp QUESTION
-&none      &trans    &trans           &trans        &none       &trans         &trans  &trans     &none     &trans           &trans     &trans
-            >;
-        };
-
-        Numeric_2 {
-            bindings = <
-&kp      &kp  &kp       &kp       &kp        &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp TAB  &kp  &kp       &kp UP    &kp        &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&trans   &kp  &kp LEFT  &kp DOWN  &kp RIGHT  &kp    &kp  &kp  &kp  &kp  &kp  &kp  &apostrophe_quote
-&kp      &kp  &kp       &kp       &kp        &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp      &kp  &kp       &kp       &kp        &kp    &kp  &kp  &kp  &kp  &kp  &kp
+&kp ESCAPE                 &kp EXCL  &at_symbol  &hash_sign  &dollar_sign  &percent_sign    &trans  &caret_sign  &ampersand  &kp ASTERISK      &kp MINUS        &kp EQUAL         &trans
+&right_square_curly_bracs  &none     &none       &kp UP      &none         &none            &trans  &none        &none       &none             &none            &none             &left_square_curly_bracs
+&trans                     &none     &kp LEFT    &kp DOWN    &kp RIGHT     &none            &trans  &none        &none       &none             &none            &semicolon_colon  &apostrophe_quote
+&trans                     &none     &none       &none       &none         &none            &trans  &none        &none       &comma_less_than  &period_greater  &slash_question   &backslash_vertical
+&trans                     &trans    &trans      &trans      &trans        &trans           &trans  &trans       &trans      &trans            &trans           &trans
             >;
         };
 
         Functional {
             bindings = <
-&kp F1           &kp F2           &kp F3           &kp F4           &kp F5           &kp F6             &trans  &kp F7  &kp F8           &kp F9          &kp F10          &kp F11  &kp F12
-&kp TAB          &none            &none            &none            &none            &none              &trans  &none   &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none    &none
-&kp CAPS         &none            &none            &none            &none            &none              &trans  &none   &kp INSERT       &kp HOME        &kp PAGE_UP      &none    &none
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &none   &kp DELETE       &kp END         &kp PAGE_DOWN    &none    &mo 4
-&trans           &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans           &trans          &trans           &trans
+&kp F1    &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &trans  &kp F7  &kp F8           &kp F9          &kp F10          &kp F11  &kp F12
+&kp TAB   &none   &none   &none   &none   &none     &trans  &none   &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none    &none
+&kp CAPS  &none   &none   &none   &none   &none     &trans  &none   &kp INSERT       &kp HOME        &kp PAGE_UP      &none    &none
+&none     &none   &none   &none   &none   &none     &trans  &none   &kp DELETE       &kp END         &kp PAGE_DOWN    &none    &mo 3
+&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans           &trans          &trans           &trans
             >;
         };
 
         Danger {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &bt BT_CLR  &bt BT_CLR_ALL
-&none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none       &out OUT_TOG
-&none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none       &none
-&none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none       &none
-&none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
+&none            &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &none  &none  &none  &none  &none  &bt BT_CLR  &bt BT_CLR_ALL
+&none            &none            &none            &none            &none            &none              &none  &none  &none  &none  &none  &none       &out OUT_TOG
+&none            &none            &none            &none            &none            &none              &none  &none  &none  &none  &none  &none       &none
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &none  &none  &none  &none  &none  &none       &none
+&none            &none            &none            &none            &none            &none              &none  &none  &none  &none  &none  &none
             >;
         };
     };
