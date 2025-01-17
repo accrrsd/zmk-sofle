@@ -47,6 +47,60 @@
         tap-ms = <30>;
     };
 
+    apostrophe_quote: apostrophe_quote {
+        compatible = "zmk,behavior-mod-morph";
+        label = "APOSTROPHE_QUOTE";
+        bindings = <&apostrophe>, <&double_quote>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    semicolon_colon: semicolon_colon {
+        compatible = "zmk,behavior-mod-morph";
+        label = "SEMICOLON_COLON";
+        bindings = <&semicolon>, <&colon>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    period_greater: period_greater {
+        compatible = "zmk,behavior-mod-morph";
+        label = "PERIOD_GREATER";
+        bindings = <&period>, <&greater_than>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    comma_less_than: comma_less_than {
+        compatible = "zmk,behavior-mod-morph";
+        label = "COMMA_LESS_THAN";
+        bindings = <&comma>, <&less_than>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    left_square_curly_bracs: left_square_curly_bracs {
+        compatible = "zmk,behavior-mod-morph";
+        label = "LEFT_SQUARE_CURLY_BRACS";
+        bindings = <&left_square_bracket>, <&left_curly_brace>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    right_square_curly_bracs: right_square_curly_bracs {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RIGHT_SQUARE_CURLY_BRACS";
+        bindings = <&right_square_bracket>, <&right_curly_brace>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -57,7 +111,7 @@
         };
 
         to_functional_layer {
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <60 56>;
         };
 
@@ -69,7 +123,7 @@
     };
 
     macros {
-        column: column {
+        colon: column {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -81,6 +135,160 @@
                 <&kp LA(LEFT_ALT)>;
 
             label = "COLUMN";
+        };
+
+        apostrophe: apostrophe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_3 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "APOSTROPHE";
+        };
+
+        double_quote: double_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N3 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "DOUBLE_QUOTE";
+        };
+
+        semicolon: semicolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_N5 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "SEMICOLON";
+        };
+
+        period: period {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_4 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "PERIOD";
+        };
+
+        comma: comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_4 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "COMMA";
+        };
+
+        less_than: less_than {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_6 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "LESS_THAN";
+        };
+
+        greater_than: greater_than {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_6 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "GREATER_THAN";
+        };
+
+        left_curly_brace: left_curly_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "LEFT_CURLY_BRACE";
+        };
+
+        right_curly_brace: right_curly_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "RIGHT_CURLY_BRACE";
+        };
+
+        left_square_bracket: left_square_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "LEFT_SQUARE_BRACKET";
+        };
+
+        right_square_bracket: right_square_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LA(LEFT_ALT)>;
+
+            label = "RIGHT_SQUARE_BRACKET";
         };
     };
 
@@ -102,11 +310,21 @@
 
         Numeric {
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT_SIGN      &kp HASH      &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &column    &kp MINUS   &kp EQUAL
+&kp TILDE  &kp EXCL  &kp AT_SIGN      &kp HASH      &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &colon     &kp MINUS   &kp EQUAL
 &kp TAB    &none     &kp KP_MULTIPLY  &kp KP_SLASH  &kp LBKT    &kp RBKT       &trans  &none      &none     &kp UP           &none      &none       &kp SINGLE_QUOTE
 &trans     &none     &none            &none         &kp LBRC    &kp RBRC       &trans  &none      &kp LEFT  &kp DOWN         &kp RIGHT  &trans      &kp DOUBLE_QUOTES
 &trans     &none     &none            &none         &none       &none          &trans  &none      &none     &none            &none      &kp KP_DOT  &kp QUESTION
 &none      &trans    &trans           &trans        &none       &trans         &trans  &trans     &none     &trans           &trans     &trans
+            >;
+        };
+
+        Numeric_2 {
+            bindings = <
+&kp      &kp  &kp       &kp       &kp        &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp TAB  &kp  &kp       &kp UP    &kp        &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&trans   &kp  &kp LEFT  &kp DOWN  &kp RIGHT  &kp    &kp  &kp  &kp  &kp  &kp  &kp  &apostrophe_quote
+&kp      &kp  &kp       &kp       &kp        &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp      &kp  &kp       &kp       &kp        &kp    &kp  &kp  &kp  &kp  &kp  &kp
             >;
         };
 
@@ -115,7 +333,7 @@
 &kp F1           &kp F2           &kp F3           &kp F4           &kp F5           &kp F6             &trans  &kp F7  &kp F8           &kp F9          &kp F10          &kp F11  &kp F12
 &kp TAB          &none            &none            &none            &none            &none              &trans  &none   &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none    &none
 &kp CAPS         &none            &none            &none            &none            &none              &trans  &none   &kp INSERT       &kp HOME        &kp PAGE_UP      &none    &none
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &none   &kp DELETE       &kp END         &kp PAGE_DOWN    &none    &mo 3
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &none   &kp DELETE       &kp END         &kp PAGE_DOWN    &none    &mo 4
 &trans           &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans           &trans          &trans           &trans
             >;
         };
