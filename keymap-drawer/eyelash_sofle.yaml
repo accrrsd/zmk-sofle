@@ -75,7 +75,7 @@ layers:
   - ^
   - '&'
   - KP MULTIPLY
-  - ':'
+  - '&column'
   - {t: '-', s: _}
   - {t: '=', s: +}
   - $$mdi:keyboard-tab$$
