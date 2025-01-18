@@ -142,7 +142,6 @@
                 <&kp LCTRL>;
 
             label = "COLUMN";
-            tap-ms = <30>;
         };
 
         apostrophe: apostrophe {
