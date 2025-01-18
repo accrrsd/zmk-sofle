@@ -119,13 +119,6 @@
         mods = <(MOD_LSFT)>;
     };
 
-    test: test {
-        compatible = "zmk,behavior-send-string";
-        label = "TEST";
-        #binding-cells = <0>;
-        text = "/";
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -142,11 +135,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_N5 &kp KP_NUMBER_8>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "COLUMN";
         };
@@ -156,11 +149,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_3 &kp KP_NUMBER_9>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;
+                <&kp LCTRL>;
 
             label = "APOSTROPHE";
         };
@@ -170,11 +163,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_N3 &kp KP_NUMBER_4>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;
+                <&kp LCTRL>;
 
             label = "DOUBLE_QUOTE";
         };
@@ -184,11 +177,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_N5 &kp KP_NUMBER_9>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "SEMICOLON";
         };
@@ -198,11 +191,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_4 &kp KP_NUMBER_6>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "PERIOD";
         };
@@ -212,11 +205,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_4 &kp KP_NUMBER_4>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "COMMA";
         };
@@ -226,11 +219,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_6 &kp KP_NUMBER_0>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "LESS_THAN";
         };
@@ -240,11 +233,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_6 &kp KP_NUMBER_2>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "GREATER_THAN";
         };
@@ -254,11 +247,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "LEFT_CURLY_BRACE";
         };
@@ -268,11 +261,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "RIGHT_CURLY_BRACE";
         };
@@ -282,11 +275,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_9 &kp KP_NUMBER_1>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "LEFT_SQUARE_BRACKET";
         };
@@ -296,11 +289,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_9 &kp KP_NUMBER_3>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "RIGHT_SQUARE_BRACKET";
         };
@@ -310,11 +303,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_6 &kp KP_NUMBER_4>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "AT_SYMBOL";
         };
@@ -324,11 +317,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_3 &kp KP_NUMBER_5>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "HASH_SIGN";
         };
@@ -338,11 +331,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_3 &kp KP_NUMBER_6>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "DOLLAR_SIGN";
         };
@@ -352,11 +345,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_3 &kp KP_NUMBER_7>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "PERCENT_SIGN";
         };
@@ -366,11 +359,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_9 &kp KP_NUMBER_4>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "CARET_SIGN";
         };
@@ -380,11 +373,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_3 &kp KP_NUMBER_8>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "AMPERSAND";
         };
@@ -394,11 +387,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_6 &kp KP_NUMBER_3>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "QUESTION_MARK";
         };
@@ -408,11 +401,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_4 &kp KP_NUMBER_7>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "FORWARD_SLASH";
         };
@@ -422,11 +415,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_4>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "VERTICAL_BAR";
         };
@@ -436,11 +429,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LEFT_ALT)>,
+                <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_9 &kp KP_NUMBER_2>,
                 <&macro_release>,
-                <&kp LA(LEFT_ALT)>;
+                <&kp LCTRL>;
 
             label = "BACKSLASH";
         };
@@ -467,7 +460,7 @@
 &trans                     &kp EXCL  &at_symbol  &hash_sign  &dollar_sign  &percent_sign    &trans  &caret_sign  &ampersand  &kp ASTERISK      &kp MINUS        &kp EQUAL         &trans
 &right_square_curly_bracs  &none     &none       &kp UP      &none         &none            &trans  &none        &none       &none             &none            &none             &left_square_curly_bracs
 &trans                     &none     &kp LEFT    &kp DOWN    &kp RIGHT     &none            &trans  &none        &none       &none             &none            &semicolon_colon  &apostrophe_quote
-&trans                     &none     &none       &none       &none         &none            &trans  &none        &none       &comma_less_than  &period_greater  &kp KP_SLASH      &backslash_vertical
+&trans                     &none     &none       &none       &none         &none            &trans  &none        &none       &comma_less_than  &period_greater  &slash_question   &backslash_vertical
 &trans                     &trans    &trans      &trans      &trans        &trans           &trans  &trans       &trans      &trans            &trans           &trans
             >;
         };
