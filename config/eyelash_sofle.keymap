@@ -119,6 +119,13 @@
         mods = <(MOD_LSFT)>;
     };
 
+    test: test {
+        compatible = "zmk,behavior-send-string";
+        label = "TEST";
+        #binding-cells = <0>;
+        text = "/";
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -460,7 +467,7 @@
 &trans                     &kp EXCL  &at_symbol  &hash_sign  &dollar_sign  &percent_sign    &trans  &caret_sign  &ampersand  &kp ASTERISK      &kp MINUS        &kp EQUAL         &trans
 &right_square_curly_bracs  &none     &none       &kp UP      &none         &none            &trans  &none        &none       &none             &none            &none             &left_square_curly_bracs
 &trans                     &none     &kp LEFT    &kp DOWN    &kp RIGHT     &none            &trans  &none        &none       &none             &none            &semicolon_colon  &apostrophe_quote
-&trans                     &none     &none       &none       &none         &none            &trans  &none        &none       &comma_less_than  &period_greater  &slash_question   &backslash_vertical
+&trans                     &none     &none       &none       &none         &none            &trans  &none        &none       &comma_less_than  &period_greater  &test             &backslash_vertical
 &trans                     &trans    &trans      &trans      &trans        &trans           &trans  &trans       &trans      &trans            &trans           &trans
             >;
         };
