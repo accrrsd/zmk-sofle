@@ -115,7 +115,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '&comma', s: '&less_than'}
   - {t: '&period', s: '&greater_than'}
-  - {t: '&forward_slash', s: '&question_mark'}
+  - '&test'
   - {t: '&backslash', s: '&vertical_bar'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
