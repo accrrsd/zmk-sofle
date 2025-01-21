@@ -262,3 +262,5 @@ layers:
 combos:
 - p: [60, 56]
   k: Functional
+- p: [52, 58]
+  k: $$mdi:mouse-scroll-wheel$$
