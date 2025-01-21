@@ -55,6 +55,12 @@
             key-positions = <60 56>;
             timeout-ms = <150>;
         };
+
+        middle_click {
+            bindings = <&mkp MCLK>;
+            key-positions = <52 58>;
+            timeout-ms = <150>;
+        };
     };
 
     macros {
