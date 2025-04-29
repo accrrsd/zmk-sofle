@@ -5,8 +5,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 /*
@@ -99,7 +97,7 @@
 
         Main {
             bindings = <
-&kp GRAVE                       &kp N1  &kp N2  &kp N3        &kp N4              &kp N5       &mmv MOVE_UP     &kp N6     &kp N7              &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp ESC                         &kp N1  &kp N2  &kp N3        &kp N4              &kp N5       &mmv MOVE_UP     &kp N6     &kp N7              &kp N8     &kp N9   &kp N0    &kp BACKSPACE
 &hold_tap_kp TAB RIGHT_BRACKET  &kp Q   &kp W   &kp E         &kp R               &kp T        &mmv MOVE_DOWN   &kp Y      &kp U               &kp I      &kp O    &kp P     &kp LBKT
 &kp LEFT_SHIFT                  &kp A   &kp S   &kp D         &kp F               &kp G        &mmv MOVE_LEFT   &kp H      &kp J               &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LCTRL                       &kp Z   &kp X   &kp C         &kp V               &kp B        &mmv MOVE_RIGHT  &kp N      &kp M               &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_WIN
@@ -112,7 +110,7 @@
 
         eng-numeric {
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &trans  &kp CARET  &kp AMPS  &kp STAR  &kp MINUS  &kp EQUAL  &trans
+&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &trans  &kp CARET  &kp AMPS  &kp STAR  &kp MINUS  &kp EQUAL  &trans
 &trans     &trans    &trans  &trans    &trans    &trans       &trans  &trans     &trans    &trans    &trans     &trans     &trans
 &trans     &trans    &trans  &trans    &trans    &trans       &trans  &trans     &trans    &trans    &trans     &trans     &trans
 &trans     &trans    &trans  &trans    &trans    &trans       &trans  &trans     &trans    &trans    &trans     &trans     &kp BACKSLASH
@@ -125,7 +123,7 @@
 &kp F1    &kp F2  &kp F3  &kp F4           &kp F5          &kp F6             &trans  &kp F7  &kp F8    &kp F9    &kp F10       &kp F11    &kp F12
 &kp TAB   &none   &none   &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK    &trans  &none   &none     &none     &none         &none      &none
 &kp CAPS  &none   &none   &kp INS          &kp HOME        &kp PG_UP          &trans  &none   &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none
-&none     &none   &none   &kp DELETE       &kp END         &kp PAGE_DOWN      &trans  &none   &none     &none     &none         &none      &mo 3
+&trans    &none   &none   &kp DELETE       &kp END         &kp PAGE_DOWN      &trans  &none   &none     &none     &none         &none      &mo 3
 &trans    &trans  &trans  &trans           &trans          &trans             &trans  &trans  &trans    &trans    &trans        &trans
             >;
         };
