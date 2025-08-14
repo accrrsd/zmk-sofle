@@ -60,7 +60,7 @@
 
         to_functional_layer {
             bindings = <&tog 2>;
-            key-positions = <60 56>;
+            key-positions = <59 57>;
             timeout-ms = <150>;
         };
 
