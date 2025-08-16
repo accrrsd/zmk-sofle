@@ -58,12 +58,6 @@
     combos {
         compatible = "zmk,combos";
 
-        to_functional_layer {
-            bindings = <&tog 2>;
-            key-positions = <>;
-            timeout-ms = <150>;
-        };
-
         middle_click {
             bindings = <&mkp MCLK>;
             key-positions = <52 58>;
