@@ -51,7 +51,7 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <150>;
         flavor = "tap-preferred";
     };
 
@@ -91,30 +91,30 @@
 
         Main {
             bindings = <
-&hold_tap_kp ESCAPE GRAVE       &kp N1  &kp N2   &kp N3        &kp N4              &kp N5       &mmv MOVE_UP     &kp N6     &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&hold_tap_kp TAB RIGHT_BRACKET  &kp Q   &kp W    &kp E         &kp R               &kp T        &mmv MOVE_DOWN   &kp Y      &kp U   &kp I      &kp O    &kp P     &kp LBKT
-&kp LEFT_SHIFT                  &kp A   &kp S    &kp D         &kp F               &kp G        &mmv MOVE_LEFT   &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LCTRL                       &kp Z   &kp X    &kp C         &kp V               &kp B        &mmv MOVE_RIGHT  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
-&mkp RCLK                       &none   &kp F19  &kp LEFT_ALT  &numeric_key 1 F21  &kp SPACE    &mkp LCLK        &kp ENTER  &mo 2   &kp ESC    &kp F20  &none
+&hold_tap_kp ESCAPE GRAVE       &hold_tap_kp EXCL N1  &hold_tap_kp AT N2  &hold_tap_kp HASH N3  &hold_tap_kp DOLLAR N4  &hold_tap_kp PERCENT N5    &mmv MOVE_UP     &hold_tap_kp CARET N6  &hold_tap_kp AMPERSAND N7  &hold_tap_kp ASTRK N8  &hold_tap_kp MINUS N9  &hold_tap_kp EQUAL N0   &kp BACKSPACE
+&hold_tap_kp TAB RIGHT_BRACKET  &kp Q                 &kp W               &kp E                 &kp R                   &kp T                      &mmv MOVE_DOWN   &kp Y                  &kp U                      &kp I                  &kp O                  &kp P                   &kp LBKT
+&kp LEFT_SHIFT                  &kp A                 &kp S               &kp D                 &kp F                   &kp G                      &mmv MOVE_LEFT   &kp H                  &kp J                      &kp K                  &kp L                  &kp SEMI                &kp APOS
+&kp LCTRL                       &kp Z                 &kp X               &kp C                 &kp V                   &kp B                      &mmv MOVE_RIGHT  &kp N                  &kp M                      &kp COMMA              &kp DOT                &hold_tap_kp BSLH FSLH  &kp DELETE
+&mkp RCLK                       &none                 &kp F19             &kp LEFT_ALT          &numeric_key 1 F21      &kp SPACE                  &mkp LCLK        &kp ENTER              &mo 2                      &kp ESC                &kp F20                &none
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
             display-name = "LAYER0";
         };
 
-        eng-numeric {
+        Functional {
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &trans  &kp CARET  &kp AMPS  &kp STAR  &kp MINUS  &kp EQUAL      &trans
-&kp TAB    &trans    &trans  &trans    &trans    &trans       &trans  &trans     &trans    &trans    &trans     &trans         &trans
-&trans     &trans    &trans  &trans    &trans    &trans       &trans  &trans     &trans    &trans    &trans     &trans         &trans
-&trans     &trans    &trans  &trans    &trans    &trans       &trans  &trans     &trans    &trans    &trans     &kp BACKSLASH  &kp RMETA
-&trans     &trans    &trans  &trans    &trans    &trans       &trans  &trans     &trans    &trans    &trans     &trans
+&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&kp TAB  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans   &kp RMETA
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        Functional {
+        Special {
             bindings = <
-&kp F12       &kp F1  &kp F2           &kp F3          &kp F4           &kp F5    &trans  &kp F6  &kp F7    &kp F8    &kp F9        &kp F10    &kp F11
+&trans        &trans  &trans           &trans          &trans           &trans    &trans  &trans  &trans    &trans    &trans        &trans     &trans
 &kp CAPSLOCK  &none   &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none     &trans  &none   &none     &none     &none         &none      &none
 &trans        &none   &kp INS          &kp HOME        &kp PG_UP        &none     &trans  &none   &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none
 &trans        &none   &kp DELETE       &kp END         &kp PAGE_DOWN    &none     &trans  &none   &none     &none     &none         &none      &mo 3
