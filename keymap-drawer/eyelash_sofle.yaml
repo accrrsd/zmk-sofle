@@ -14,7 +14,7 @@ layers:
   - {t: '9', h: '-', s: (}
   - {t: '0', h: '=', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: ']', h: '$$mdi:keyboard-tab$$', s: '}'}
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: '[', s: '{'}
+  - {t: '[', h: ']', s: '{'}
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -79,7 +79,7 @@ layers:
   - F9
   - F10
   - F11
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
