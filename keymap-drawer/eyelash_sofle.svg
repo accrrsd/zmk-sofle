@@ -657,6 +657,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="413" y="141" width="28" height="26" class="combo"/>
 <use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="418" y="145" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
 </g>
+<g class="combo combopos-1">
+<path d="M462,283 l-129,0" class="combo"/>
+<path d="M462,283 l129,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="270" width="28" height="26" class="combo"/>
+<a href="#Danger">
+<text x="462" y="283" class="combo tap layer-activator">Danger</text>
+</a><text x="462" y="294" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-Functional">
@@ -988,6 +996,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="413" y="141" width="28" height="26" class="combo"/>
 <use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="418" y="145" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
 </g>
+<g class="combo combopos-1">
+<path d="M462,283 l-129,0" class="combo"/>
+<path d="M462,283 l129,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="270" width="28" height="26" class="combo"/>
+<a href="#Danger">
+<text x="462" y="283" class="combo tap layer-activator">Danger</text>
+</a><text x="462" y="294" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 776)" class="layer-Special">
@@ -1255,9 +1271,8 @@ rect.held, rect.combo.held {
 <g transform="translate(896, 224)" class="key keypos-51">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Danger">
-<text x="0" y="-4" class="key tap layer-activator">Danger</text>
-</a></g>
+<text x="0" y="-4" class="key tap">RGUI</text>
+</g>
 <g transform="translate(392, 217)" class="key trans keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
@@ -1322,6 +1337,14 @@ rect.held, rect.combo.held {
 <path d="M427,154 l26,-47" class="combo"/>
 <rect rx="6" ry="6" x="413" y="141" width="28" height="26" class="combo"/>
 <use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="418" y="145" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+</g>
+<g class="combo combopos-1">
+<path d="M462,283 l-129,0" class="combo"/>
+<path d="M462,283 l129,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="270" width="28" height="26" class="combo"/>
+<a href="#Danger">
+<text x="462" y="283" class="combo tap layer-activator">Danger</text>
+</a><text x="462" y="294" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1604,10 +1627,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(896, 224)" class="key held keypos-51">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key held tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(896, 224)" class="key none keypos-51">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(392, 217)" class="key none keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -1649,10 +1672,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(610, 283) rotate(-30.0)" class="key held keypos-60">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key held tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(610, 283) rotate(-30.0)" class="key none keypos-60">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(672, 259)" class="key none keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -1674,6 +1697,14 @@ rect.held, rect.combo.held {
 <path d="M427,154 l26,-47" class="combo"/>
 <rect rx="6" ry="6" x="413" y="141" width="28" height="26" class="combo"/>
 <use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="418" y="145" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+</g>
+<g class="combo combopos-1">
+<path d="M462,283 l-129,0" class="combo"/>
+<path d="M462,283 l129,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="270" width="28" height="26" class="combo"/>
+<a href="#Danger">
+<text x="462" y="283" class="combo tap layer-activator">Danger</text>
+</a><text x="462" y="294" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
