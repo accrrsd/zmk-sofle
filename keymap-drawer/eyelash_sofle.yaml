@@ -264,4 +264,4 @@ combos:
 - p: [52, 58]
   k: $$mdi:mouse-scroll-wheel$$
 - p: [56, 60]
-  k: {t: Danger, h: toggle}
+  k: '&toggle_danger_with_rgb'
