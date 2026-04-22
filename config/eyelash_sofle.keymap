@@ -60,7 +60,7 @@
         };
 
         to_danger_layer {
-            bindings = <&tog 3>;
+            bindings = <&toggle_danger_with_rgb>;
             key-positions = <56 60>;
             timeout-ms = <150>;
         };
@@ -84,6 +84,13 @@
                 <&mo MACRO_PLACEHOLDER>;
 
             label = "NUMERIC_KEY";
+        };
+
+        toggle_danger_with_rgb: toggle_with_rgb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 3 &rgb_ug RGB_TOG>;
+            label = "TOGGLE_WITH_RGB";
         };
     };
 
