@@ -264,4 +264,4 @@ combos:
 - p: [52, 58]
   k: $$mdi:mouse-scroll-wheel$$
 - p: [56, 60]
-  k: {t: layer3, h: toggle}
+  k: '&to_danger_layer_macro'
