@@ -60,14 +60,14 @@
         };
 
         to_danger_layer {
-            bindings = <&tog 3>;
+            bindings = <&to_danger_layer_macro>;
             key-positions = <56 60>;
             timeout-ms = <150>;
         };
     };
 
     macros {
-        to_danger_layer: to_danger_layer {
+        to_danger_layer_macro: to_danger_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&tog 3 &rgb_ug RGB_TOG>;
